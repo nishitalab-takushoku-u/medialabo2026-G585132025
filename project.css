@@ -1,24 +1,29 @@
+*{
+    background: content-box radial-gradient(red, orange);
+}
+
 img.sign1 {
     float: right;
-    margin: 15px ;
-    
+    margin: 40px;
 
 }
 
 img.sign2 {
     float: right;
-    margin: 15px ;
-   
+    margin: 40px;
 }
 
+
 h1 {
-    font-style:italic
+    font-style:italic;
 }
 
 h2 {
-    font-style:italic
+    font-style:italic;
+    border-left-style: inset  rgb(16, 195, 255) 12px;
+    background: linear-gradient(.25turn, rgb(16, 195, 255), 50%,white )  ;
 }
 
 h3 {
-    font-style:italic
+    font-style:italic;
 }
