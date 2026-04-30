@@ -1,0 +1,21 @@
+
+h1 {
+    color: blue;
+    background-color: yellowgreen;
+}
+h2 {
+    border-left: solid yellowgreen 15px;
+    border-top: solid yellowgreen 10px;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple:
+}
+
+a:hover {
+    text-decoration: none;
+}
