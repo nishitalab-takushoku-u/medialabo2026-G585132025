@@ -1,5 +1,26 @@
-img.sign {
+img.sign1 {
     float: right;
     margin: 15px 0px 15px 15px;
+    height: 400px;
+    width: 300px;
 
+}
+
+img.sign2 {
+    float: right;
+    margin: 15px 0px 15px 15px;
+    height: 400px;
+    width: 300px;
+}
+
+h1 {
+    font-style:italic
+}
+
+h2 {
+    font-style:italic
+}
+
+h3 {
+    font-style:italic
 }
