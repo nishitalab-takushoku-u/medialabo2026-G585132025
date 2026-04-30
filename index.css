@@ -1,7 +1,8 @@
 
 h1 {
     color: blue;
-    background-color: yellowgreen;
+    font-style: italic;
+    text-shadow: yellowgreen 1px 0 10px;
 }
 h2 {
     border-left: solid yellowgreen 15px;
