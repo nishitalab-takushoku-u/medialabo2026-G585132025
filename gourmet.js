@@ -9,6 +9,15 @@ function print(data) {
   console.log("ジャンル:" + data.results.shop[0].genre.name);
   console.log("アクセス:" + data.results.shop[0].access);
   console.log("営業時間:" + data.results.shop[0].open);
+
+  console.log("2件目の検索結果");
+  console.log("店名:" + data.results.shop[1].name );
+  console.log("住所:" + data.results.shop[1].address);
+  console.log("キャッチコピー:" + data.results.shop[1].catch);
+  console.log("予算:" + data.results.shop[1].budget.name + data.results.shop[0].budget.average);
+  console.log("ジャンル:" + data.results.shop[1].genre.name);
+  console.log("アクセス:" + data.results.shop[1].access);
+  console.log("営業時間:" + data.results.shop[1].open);
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
