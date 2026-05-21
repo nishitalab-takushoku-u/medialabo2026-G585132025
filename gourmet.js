@@ -26,7 +26,11 @@ function printDom(data) {
   d.setAttribute('id' , 'result');
   let b = document.querySelector('body');
   b.insertAdjacentElement('beforeend' , d);
-  
+  let addr = document.querySelector('#addr');
+  let p = document.createElement("p");
+  p.textContent = data.results.shop[0].name;
+  addr.insertAdjacentElement('afterend' , p);
+  let dept= document.querySelector('#dept');
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
