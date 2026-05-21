@@ -16,4 +16,5 @@ let gakka = [
 
 //////////////// ここから下にプログラムを書きたそう!
 
-<p>campus.address</p>
+let p = document.createElement('a');
+p.teaxrContent = campus.address; 
