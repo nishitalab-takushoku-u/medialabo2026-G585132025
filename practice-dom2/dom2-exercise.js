@@ -17,12 +17,12 @@ let gakka = [
 //////////////// ここから下にプログラムを書きたそう!
 
 function print(data){
-	let addr = document.createElement('#addr');
+	let addr = document.querySelector('#addr');
 	let p = document.createElement("p");
 
     p.textContent = campus.address;
 
-    p.insertAdjacentElement('beforeend' , addr);
+    addr.insertAdjacentElement('afterend' , p);
 
     let dept = document.querySelector("#dept");
 
@@ -45,7 +45,7 @@ function print(data){
     
 	 
 }
-let b = document.querySelector('button#print');
+let b = document.querySelector('button#show');
 b.addEventListener('click', print);
 
 
