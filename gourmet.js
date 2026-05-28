@@ -22,11 +22,41 @@ function print(data) {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+ 
   let result = document.querySelector('#result');
+
   let h2 = document.createElement('h2');
   h2.textContent = "検索結果";
+  result.insertAdjacentElement("beforeend", h2);
 
+  let p1 = document.createElement('p');
+  p1.textContent =
+    "店名:" + data.results.shop[0].name +
+    " / 住所:" + data.results.shop[0].address +
+    " / キャッチコピー:" + data.results.shop[0].catch +
+    " / 予算:" + data.results.shop[0].budget.name +
+    data.results.shop[0].budget.average +
+    " / ジャンル:" + data.results.shop[0].genre.name +
+    " / アクセス:" + data.results.shop[0].access +
+    " / 営業時間:" + data.results.shop[0].open;
+
+  result.insertAdjacentElement("beforeend", p1);
+
+  let p2 = document.createElement('p');
+  p2.textContent =
+    "店名:" + data.results.shop[1].name +
+    " / 住所:" + data.results.shop[1].address +
+    " / キャッチコピー:" + data.results.shop[1].catch +
+    " / 予算:" + data.results.shop[1].budget.name +
+    data.results.shop[1].budget.average +
+    " / ジャンル:" + data.results.shop[1].genre.name +
+    " / アクセス:" + data.results.shop[1].access +
+    " / 営業時間:" + data.results.shop[1].open;
+
+  result.insertAdjacentElement("beforeend", p2);
 }
+
+
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
