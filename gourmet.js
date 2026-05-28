@@ -42,7 +42,7 @@ function printDom(data) {
   img1.setAttribute('width', '80');
   img1.setAttribute('height', '20');
 
-li2.insertAdjacentElement("beforeend", img2);
+  li1.insertAdjacentElement("beforeend", img2);
 
 
   let ul1 = document.createElement('ul');
@@ -86,7 +86,7 @@ li2.insertAdjacentElement("beforeend", img2);
   img2.setAttribute('width', '80');
   img2.setAttribute('height', '20');
 
-li1.insertAdjacentElement("beforeend", img1);
+  li2.insertAdjacentElement("beforeend", img1);
 
   let ul2 = document.createElement('ul');
   li2.insertAdjacentElement("beforeend", ul2);
