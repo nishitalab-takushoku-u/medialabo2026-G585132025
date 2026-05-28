@@ -35,7 +35,7 @@ function printDom(data) {
   let li1 = document.createElement('li');
   li1.textContent = data.results.shop[0].name;
   ol.insertAdjacentElement("beforeend", li1);
-  
+
   
  
 
