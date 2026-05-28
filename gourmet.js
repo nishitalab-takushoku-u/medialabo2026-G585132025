@@ -35,14 +35,9 @@ function printDom(data) {
   let li1 = document.createElement('li');
   li1.textContent = data.results.shop[0].name;
   ol.insertAdjacentElement("beforeend", li1);
-  let img1 = document.createElement('img');
-
-  img1.setAttribute('src', '麺笑飯店.jpg');
-  img1.setAttribute('class', 'sign2');
-  img1.setAttribute('width', '80');
-  img1.setAttribute('height', '20');
-
-  li1.insertAdjacentElement("beforeend", img2);
+  
+  
+ 
 
 
   let ul1 = document.createElement('ul');
@@ -79,14 +74,7 @@ function printDom(data) {
   li2.textContent = data.results.shop[1].name;
   ol.insertAdjacentElement("beforeend", li2);
 
-  let img2 = document.createElement('img');
-
-  img2.setAttribute('src', '麺や樽座小宮店.jpg');
-  img2.setAttribute('class', 'sign2');
-  img2.setAttribute('width', '80');
-  img2.setAttribute('height', '20');
-
-  li2.insertAdjacentElement("beforeend", img1);
+  
 
   let ul2 = document.createElement('ul');
   li2.insertAdjacentElement("beforeend", ul2);
