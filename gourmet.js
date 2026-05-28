@@ -58,9 +58,7 @@ function printDom(data) {
     data.results.shop[0].budget.average;
   ul1.insertAdjacentElement("beforeend", a3);
 
-  let a4 = document.createElement('li');
-  a4.textContent = "キャッチコピー:" + data.results.shop[0].catch;
-  ul1.insertAdjacentElement("beforeend", a4);
+  
 
   let a5 = document.createElement('li');
   a5.textContent = "ジャンル:" + data.results.shop[0].genre.name;
@@ -146,36 +144,21 @@ let data = {
     "results_start": 1,
     "shop": [
       {
-        "access": "京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。",
-        "address": "東京都八王子市明神町４-6-12　ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F",
+        "access": "アクセス:京王八王子駅隣のビル1階の右側です。",
+        "address": "東京都八王子市明神町３丁目21-7タバタビル1階",
         "band": "可",
         "barrier_free": "なし",
         "budget": {
-          "average": "ディナー3000円",
-          "code": "B003",
-          "name": "3001～4000円"
+          "average": "ランチ1000円　ディナー3000円程 ",
+          "code": "B001",
+          "name": "1000～3000円"
         },
-        "budget_memo": "",
-        "capacity": 100,
-        "card": "利用可",
-        "catch": "【サプライズ演出有】 結婚パーティー受付中",
-        "charter": "貸切可 ：VIPルーム1部屋2～15名様前後（完全個室）/パーティーフロア！50型モニター・スポットライト等充実",
-        "child": "お子様連れOK",
-        "close": "不定休有り。店休時は店長携帯電話09035324825まで問い合わせください♪",
-        "coupon_urls": {
-          "pc": "https://www.hotpepper.jp/strJ000989843/map/?vos=nhppalsa000016",
-          "sp": "https://www.hotpepper.jp/strJ000989843/scoupon/?vos=nhppalsa000016"
-        },
-        "course": "あり",
-        "english": "なし",
-        "free_drink": "あり",
-        "free_food": "なし",
+       
         "genre": {
-          "catch": "大人の社交場非日常を味わうダイニング",
-          "code": "G001",
-          "name": "居酒屋"
+          "code": "G013",
+          "name": "ラーメン"
         },
-        "horigotatsu": "なし",
+       
         "id": "J000989843",
         "karaoke": "あり",
         "ktai_coupon": 0,
@@ -200,7 +183,7 @@ let data = {
         "name": "バグダッドカフェ Bagdadcafe/モータウン MOTOWN",
         "name_kana": "ばぐだっどかふぇもーたうんはちおうじ",
         "non_smoking": "禁煙席なし",
-        "open": "月～日、祝日、祝前日: 17:00～21:00 （料理L.O. 20:00 ドリンクL.O. 20:00）",
+        "open": "月~木:11:00~14:00 (料理L.O.13:00 ドリンクL.O. 13:30) 18:00~22:00 (料理L.O.21:30 ドリンクL.O. 21:30) 金,土:11:00~14:00 (料理L.O.13:00 ドリンクL.O. 13:30) 18:00~23:00 (料理L.O.22:30 ドリンクL.O. 22:30) 定休日: 日曜日 ",
         "other_memo": "ステージ・マイク・カラオケ等",
         "parking": "なし",
         "party_capacity": 250,
@@ -241,34 +224,22 @@ let data = {
         "wifi": "あり"
       },
       {
-        "access": "ＪＲ八王子駅北口徒歩1分/京王八王子駅徒歩3分",
-        "address": "東京都八王子市東町12-14",
-        "band": "不可",
-        "barrier_free": "あり ：スタッフがお手伝いさせて頂きます。ご不明な点等お気軽にお声掛け下さい。事前のお問い合わせも◎",
+        "access": "JR八高線小宮駅から多摩大橋に向かって徒歩約10分です。",
+        "address": "東京都八王子市小宮町９４１－１",
         "budget": {
-          "average": "2,000円(通常平均) 3,000円(宴会平均) ",
-          "code": "B002",
-          "name": "2001～3000円"
+          "average": "900円",
+          "code": "B001",
+          "name": "昼800円/夜1000円"
         },
-        "budget_memo": "",
-        "capacity": 100,
-        "card": "利用可",
-        "catch": "2.5時間飲み放題付2000円~ 【★少人数様ソファー★】",
-        "charter": "貸切可 ：八王子で人気の個室バル最大50名様まで対応できます。20名様～フロア貸切応相談　最大100名様までOK",
-        "child": "お子様連れ歓迎 ：チャイルドシートもご用意しています。お子様連れのママ会・ご家族でのご利用にもお気軽にどうぞ♪",
-        "close": "【年中無休】貸切宴会のご予約も絶賛受付中！最大100名様までご利用可能ですので、会社宴会 同窓会 宴会にオススメ♪",
-        "coupon_urls": {
-          "pc": "https://www.hotpepper.jp/strJ001275177/map/?vos=nhppalsa000016",
-          "sp": "https://www.hotpepper.jp/strJ001275177/scoupon/?vos=nhppalsa000016"
-        },
+        
         "course": "あり",
         "english": "なし",
         "free_drink": "あり ：★NEW OPEN★当店イチ押しのコース★2.5h飲み放題付き「Funny Classicコース」4980円→2980円",
         "free_food": "あり ：★NEW OPEN★当店イチ押しのコース★2.5h飲み放題付き「Funny Classicコース」4980円→2980円",
         "genre": {
-          "catch": "八王子 個室居酒屋 飲み放題 肉バル 女子会",
-          "code": "G001",
-          "name": "居酒屋"
+         
+          "code": "G013",
+          "name": "ラーメン"
         },
         "horigotatsu": "なし ：温かな照明と開放的な店内で楽しくご宴会♪八王子での宴会 飲み会 女子会 二次会 合コンに◎",
         "id": "J001275177",
@@ -295,7 +266,7 @@ let data = {
         "name": "隠れ家バル Funny&Bouquet",
         "name_kana": "かくれやばる　ふぁにーあんどぶーけ",
         "non_smoking": "禁煙席なし",
-        "open": "月～日、祝日、祝前日: 17:00～翌5:00 （料理L.O. 翌3:00 ドリンクL.O. 翌4:00）",
+        "open": "営業時間: 月~土,祝前日:11:30~23:00 日,祝:11:30~21:00 定休日 : なし",
         "other_memo": "個室や貸切の詳細等お気軽にお電話にてお問い合わせください。八王子での飲み会に◎",
         "parking": "なし ：お近くのコインパーキングをご利用下さい。",
         "party_capacity": 50,
@@ -322,7 +293,7 @@ let data = {
           "code": "X220",
           "name": "八王子"
         },
-        "station_name": "八王子",
+        "station_name": "JR八高線小宮駅",
         "sub_genre": {
           "code": "G002",
           "name": "ダイニングバー・バル"
