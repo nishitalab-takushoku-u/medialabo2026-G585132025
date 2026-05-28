@@ -21,6 +21,7 @@ function print(data) {
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
+
 function printDom(data) {
   let result = document.querySelector('#result');
 
@@ -64,6 +65,40 @@ function printDom(data) {
   let a6 = document.createElement('li');
   a6.textContent = "営業時間:" + data.results.shop[0].open;
   ul1.insertAdjacentElement("beforeend", a6);
+
+  let li2 = document.createElement('li');
+  li2.textContent = data.results.shop[1].name;
+  ol.insertAdjacentElement("beforeend", li2);
+
+  let ul2 = document.createElement('ul');
+  li2.insertAdjacentElement("beforeend", ul2);
+
+  let b1 = document.createElement('li');
+  b1.textContent = "アクセス:" + data.results.shop[1].access;
+  ul2.insertAdjacentElement("beforeend", b1);
+
+  let b2 = document.createElement('li');
+  b2.textContent = "住所:" + data.results.shop[1].address;
+  ul2.insertAdjacentElement("beforeend", b2);
+
+  let b3 = document.createElement('li');
+  b3.textContent =
+    "予算:" +
+    data.results.shop[1].budget.name +
+    data.results.shop[1].budget.average;
+  ul2.insertAdjacentElement("beforeend", b3);
+
+  let b4 = document.createElement('li');
+  b4.textContent = "キャッチコピー:" + data.results.shop[1].catch;
+  ul2.insertAdjacentElement("beforeend", b4);
+
+  let b5 = document.createElement('li');
+  b5.textContent = "ジャンル:" + data.results.shop[1].genre.name;
+  ul2.insertAdjacentElement("beforeend", b5);
+
+  let b6 = document.createElement('li');
+  b6.textContent = "営業時間:" + data.results.shop[1].open;
+  ul2.insertAdjacentElement("beforeend", b6);
 }
 
 
