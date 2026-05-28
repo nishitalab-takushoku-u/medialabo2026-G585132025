@@ -92,9 +92,7 @@ function printDom(data) {
     data.results.shop[1].budget.average;
   ul2.insertAdjacentElement("beforeend", b3);
 
-  let b4 = document.createElement('li');
-  b4.textContent = "キャッチコピー:" + data.results.shop[1].catch;
-  ul2.insertAdjacentElement("beforeend", b4);
+  
 
   let b5 = document.createElement('li');
   b5.textContent = "ジャンル:" + data.results.shop[1].genre.name;
@@ -308,6 +306,6 @@ let data = {
       }
     ]
   }
-};
+}
 
 
