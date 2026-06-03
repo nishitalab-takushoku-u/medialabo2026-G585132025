@@ -107,17 +107,28 @@ function printDom(data) {
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
-
+let b = document.querySelector('#print');
+b.addEventListener('click', sendRequest);
 
 
 // 課題6-1 のイベントハンドラ sendRequest() の定義
 function sendRequest() {
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G013.json';
 
+    axios.get(url)
+        .then(showResult)
+        .catch(showError)
+        .then(finish);
 }
 
 // 課題6-1: 通信が成功した時の処理は以下に記述
 function showResult(resp) {
 
+    let data = resp.data;
+    if (typeof data === 'string') {
+        data = JSON.parse(data);
+    }
+    printDom(data);
 }
 
 // 課題6-1: 通信エラーが発生した時の処理
