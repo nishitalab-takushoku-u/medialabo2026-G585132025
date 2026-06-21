@@ -24,9 +24,9 @@ function print(data) {
 
 function printDom(data) {
 
-  let result = document.querySelector("#result");
-  if(result){
-    result.textContent = " ";
+  let o = document.querySelector("#result");
+  if(o){
+    o.textContent = " ";
   }
 
   let result = document.createElement("div");
