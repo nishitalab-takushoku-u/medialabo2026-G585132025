@@ -24,14 +24,9 @@ function print(data) {
 
 function printDom(data) {
 
-  let o = document.querySelector("#result");
-  if(o){
-    o.textContent = " ";
-  }
+  let result = document.querySelector("#result");
 
-  let result = document.createElement("div");
-  result.id = "result";
-  document.body.insertAdjacentElement("beforeend", result);
+  result.textContent = " ";
 
 
   let h2 = document.createElement('h2');
