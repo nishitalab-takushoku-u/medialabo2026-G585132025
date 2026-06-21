@@ -24,15 +24,15 @@ function print(data) {
 
 function printDom(data) {
 
-  let o = document.querySelector("#result");
-  if (o){
-    o.remove();
+  let result = document.querySelector("#result");
+  if(result){
+    result.textContent = " ";
   }
 
   let result = document.createElement("div");
   result.id = "result";
   document.body.insertAdjacentElement("beforeend", result);
-  
+
 
   let h2 = document.createElement('h2');
   h2.textContent = "検索結果";
@@ -85,7 +85,7 @@ b.addEventListener('click', sendRequest);
 // 課題6-1 のイベントハンドラ sendRequest() の定義
 function sendRequest() {
 
-    let genre = document.querySelector("kensakukey").value;
+    let genre = document.querySelector("#kensakukey").value;
 
     let url = "https://www.nishita-lab.org/web-contents/jsons/hotpepper/" + genre + ".json";
 
